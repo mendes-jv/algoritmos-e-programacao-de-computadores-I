@@ -1,5 +1,7 @@
 # Exercícios de matéria de Algoritmos e Programação de Computadores I
 
+import math
+
 # exercício 2.1
 
 a1 = 1 + 2 + 3 + 4 + 5
@@ -70,3 +72,59 @@ print(((((s2 * 2) + s3) + " ") * 4) + ((s2 * 2) + s3))
 s = '0123456789'
 
 print(s[0], s[1], s[6], s[8], s[9], sep="\n")
+
+# exercício 2.6
+
+palavras = ['taco', 'bola', 'celeiro', 'cesta', 'peteca']
+
+palavras.sort()
+print(palavras[0], palavras[-1], sep="\n")
+
+# exercício 2.7
+
+notas = [9, 7, 7, 10, 3, 9, 6, 6, 2]
+
+notas.count(7)
+notas[-1] = 4
+max(notas)
+notas.sort()
+sum(notas) / len(notas)
+
+# exercício 2.8
+
+lista_28 = [0, 1]
+variavel_a_28 = 5
+
+print(2 + 3 == 4 or variavel_a_28 >= 5)
+print(lista_28[1] * -3 < -10 == 0)
+print((lista_28[1] * -3 < -10) in [0, True])
+print(2 * 3 ** 2)
+print(4 / 2 in [1, 2, 3])
+
+print(False in [0, True])
+
+# exercício 2.9
+
+print(type(False + False))
+print(type(2 * 3 ** 2.0))
+print(type(4 // 2 + 4 % 2))
+print(type(2 + 3 == 4 or 5 >= 5))
+
+# exercício 2.10
+
+lado_a_210 = 4
+lado_b_210 = 3
+hipotenusa_210 = int(math.sqrt((4 ** 2) + (3 ** 2)))
+
+observador_hipotenusa_210 = hipotenusa_210 >= 5
+
+raio_teste_210 = 15
+area_do_circulo_210 = math.pi * (raio_teste_210 ** 2)
+
+coordenadas_circulo_210 = [raio_teste_210, raio_teste_210]
+coordenada = [15, 16]
+
+verificador_de_coordenada_x = (coordenada[0] <= coordenadas_circulo_210[0])
+verificador_de_coordenada_y = (coordenada[1] <= coordenadas_circulo_210[1])
+verificador_de_coordenada = (verificador_de_coordenada_x and verificador_de_coordenada_y)
+print(verificador_de_coordenada)
