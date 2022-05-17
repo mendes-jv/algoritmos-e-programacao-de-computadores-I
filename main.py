@@ -128,3 +128,69 @@ verificador_de_coordenada_x = (coordenada[0] <= coordenadas_circulo_210[0])
 verificador_de_coordenada_y = (coordenada[1] <= coordenadas_circulo_210[1])
 verificador_de_coordenada = (verificador_de_coordenada_x and verificador_de_coordenada_y)
 print(verificador_de_coordenada)
+
+# exercício 3.1
+
+fahrenheit_31 = eval(input('Digite a temperatura em celsius que deseja converter para fahrenheit:'))
+celsius_31 = (5 / 9) * (fahrenheit_31 - 32)
+print('A temperatura em graus Celsius é', celsius_31)
+
+
+# exercício 3.8
+
+def average(x, y):
+    """retorna a média de x e y"""
+    return (x + y) / 2
+
+
+print(average(2, 3.5))
+
+
+# exercício 3.9
+
+def perimetro(raio_39):
+    if raio_39 > 0:
+        area_39 = 2 * math.pi * raio_39
+        return area_39
+    else:
+        pass
+
+
+print(perimetro(1))
+
+
+# exercício 3.10
+
+def negativos(lista_310):
+    """exibe os números negativos contidos na lista lista_310"""
+    for item in lista_310:
+        if item < 0:
+            print(item)
+
+
+negativos([4, 0, -1, -3, 6, -9])
+
+# exercício 3.11
+
+help(negativos)
+help(average)
+
+# exercício 3.13
+
+time_313 = ['Ava', 'Eleanor', 'Clare', 'Sarah']
+time_313[0], time_313[-1] = time_313[-1], time_313[0]
+
+print(time_313)
+
+# exercício 3.14
+
+ingredientes_314 = ['farinha', 'açúcar', 'manteiga', 'maçãs']
+
+
+def troca_p_u(lista_314):
+    lista_314[0], lista_314[-1] = lista_314[-1], lista_314[0]
+
+
+troca_p_u(ingredientes_314)
+
+print(ingredientes_314)
