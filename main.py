@@ -135,12 +135,82 @@ fahrenheit_31 = eval(input('Digite a temperatura em celsius que deseja converter
 celsius_31 = (5 / 9) * (fahrenheit_31 - 32)
 print('A temperatura em graus Celsius é', celsius_31)
 
+# exercício 3.2
+
+idade_32 = 63
+if idade_32 > 62:
+    print('Você pode obter benefícios de pensão')
+
+nome_32 = 'Musial'
+lista_32 = ['Musial', 'Aaraon', 'Williams', 'Gehrig', 'Ruth']
+if nome_32 in lista_32:
+    print('Um dos 5 maiores jogadores de beisebol de todos os tempos!')
+
+golpes_32 = 15
+defesa_32 = 0
+if (golpes_32 > 15) and (defesa_32 == 0):
+    print('Você está morto…')
+
+norte_32 = leste_32 = oeste_32 = False
+sul_32 = True
+if norte_32 or sul_32 or leste_32 or oeste_32:
+    print('Posso escapar.')
+
+# exercício 3.3
+
+ano_33 = 366
+if (ano_33 % 4) == 0:
+    print('Pode ser um ano bissexto.')
+else:
+    print('Definitivamente não é um ano bissexto.')
+
+bilhete_33 = 40028922
+loteria_33 = 40028922
+if bilhete_33 == loteria_33:
+    print('Você ganhou!')
+else:
+    print('Melhor sorte da próxima vez…')
+
+# exercício 3.4
+
+login_usuario_34 = input('Digite o login:')
+lista_autenticacao_34 = ['joe', 'sue', ' hani', 'sophie']
+
+
+def autenticacao(login_34, lista_34):
+    if login_34 in lista_34:
+        print('Voce entrou!')
+    else:
+        print('Usuário desconhecido.')
+    print('Fim.')
+
+
+autenticacao(login_usuario_34, lista_autenticacao_34)
+
+# exercício 5.1
+
+peso_real_51 = 92.5
+altura_real_51 = 1.83
+
+
+def meu_imc(peso_51, altura_51):
+    imc = peso_51 / (altura_51 ** 2)
+    if imc < 18.5:
+        print('Abaixo do peso')
+    elif 18.5 <= imc < 25:
+        print('Normal')
+    else:
+        print('Sobrepeso')
+
+
+meu_imc(peso_real_51, altura_real_51)
+
 
 # exercício 3.8
 
-def average(x, y):
+def average(x_38, y_38):
     """retorna a média de x e y"""
-    return (x + y) / 2
+    return (x_38 + y_38) / 2
 
 
 print(average(2, 3.5))
