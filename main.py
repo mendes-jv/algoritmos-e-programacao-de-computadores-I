@@ -294,3 +294,36 @@ for numero in range(0, 24, 3):
 for numero in range(3, 12, 5):
     print(numero)
 
+# exercício 4.1
+
+s_41 = '0123456789'
+
+a_41 = s[2:4]
+b_41 = s[7:8]
+c_41 = s[1:7]
+d_41 = s[0:3]
+e_41 = s[7:9]
+
+# exercício 4.2
+
+previsao_42 = 'It will be a sunny day today'
+
+cont_42 = previsao_42.count('day')
+clima_42 = previsao_42.find('sunny')
+troca_42 = previsao_42.replace('sunny', 'cloudy')
+print(previsao_42)
+
+# exercício 5.9
+
+t = [[4, 7, 2, 5], [5, 1, 9, 2], [8, 3, 6, 6]]
+s = [[0, 1, 2, 0], [0, 1, 1, 1], [0, 1, 0, 0]]
+
+
+def soma_2d(lista1_59, lista2_59):
+    for i in range(len(lista1_59)):
+        for j in range(len(lista1_59[i])):
+            lista1_59[i][j] += lista2_59[i][j]
+    print(lista1_59)
+
+
+soma_2d(t, s)
