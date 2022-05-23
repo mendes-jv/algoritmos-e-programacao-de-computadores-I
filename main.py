@@ -264,3 +264,33 @@ def troca_p_u(lista_314):
 troca_p_u(ingredientes_314)
 
 print(ingredientes_314)
+
+# exercício 3.5
+
+lista_35 = ['pare', 'desktop', 'tio', 'pote']
+
+for item in lista_35:
+    print(item)
+
+# exercício 3.6
+
+for numero in range(0, 9):
+    print(numero)
+
+for numero in range(0, 1):
+    print(numero)
+
+# exercício 3.7
+
+for numero in range(3, 13):
+    print(numero)
+
+for numero in range(0, 9, 2):
+    print(numero)
+
+for numero in range(0, 24, 3):
+    print(numero)
+
+for numero in range(3, 12, 5):
+    print(numero)
+
